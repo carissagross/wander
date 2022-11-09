@@ -1,0 +1,8 @@
+.hikes-container {
+    padding: 8px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 75%;
+    width: 100%;
+    grid-gap: 14px;
+}

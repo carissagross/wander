@@ -7,6 +7,7 @@ const NavBar = () => {
         <section className='nav-bar'>
             <div className='navbar-container'>
                 <img src={logo} alt="logo" className="logo" />
+                <button>Saved Hikes</button>
             </div>
 
         </section>
