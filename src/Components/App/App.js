@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { getHikes } from '../../apiCalls'
-import NavBar from '../NavBar/NavBar'
+import Header from '../Header/Header'
 import Hikes from '../Hikes/Hikes'
 import './App.css'
 
@@ -30,10 +30,12 @@ class App extends Component {
   render() {
     return (
       <main className='App'>
-        {/* <Header /> */}
-        <nav>
-          <NavBar />
-        </nav>
+        <Header />
+        <hr
+            style={{
+                color: 'black'
+            }}
+            />
         <Hikes hikes={this.state.hikes} />
       </main>
     )
