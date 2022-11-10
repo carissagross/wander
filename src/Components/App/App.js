@@ -34,16 +34,10 @@ class App extends Component {
     this.state.favoriteHikes.push(favHike)
   }
 
-  // currentHike = (id) => {
-  //   const findHike = this.state.hikes(hike => hike.id === id)
-  //   this.state.currentHike.push(findHike)
-  // }
-
   render() {
     return (
       <main className='App'>
         <Header />
-        {/* <HikeDetails /> */}
           <Route exact path='/' render={() => <Hikes hikes={this.state.hikes} />} />
           <Route exact path='/:id' render={({match}) => {
             const singleHike = this.state.hikes.find(hike => hike.id === match.params.id)

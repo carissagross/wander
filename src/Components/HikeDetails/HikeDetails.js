@@ -2,6 +2,9 @@ import { render } from '@testing-library/react'
 // import React, { Component } from 'react'
 import React from 'react'
 import { getHikes } from '../../apiCalls'
+import compass_icon from '../../Images/compass_icon.png'
+
+
 import './HikeDetails.css'
 
 const HikeDetails = ({hike}) => {
@@ -31,15 +34,15 @@ const HikeDetails = ({hike}) => {
     return (
         <section className='details-container'>
             <div className='image-container'>
-                <p className='details-name'>{hike.name}</p>
                 <img src={hike.image} alt={hike.name} className='details-image'/>
             </div>
             <div className='specific-details-container'>
-                <p className='details-location'>{hike.location}</p>
+                <p className='details-name'>{hike.name}</p>
+                {/* <p className='details-location'>{hike.location}</p> */}
                 <p className='details-description'>{hike.description}</p>
-                <p className='details-difficulty'><b>Difficulty: </b>{hike.difficulty}</p>
-                <p className='details-distance'>{hike.distance} miles round-trip</p>
-                <p className='details-elevation'>{hike.elevation} feet of elevation gain</p>
+                <p className='details-difficulty'><b>Difficulty:</b> {hike.difficulty}</p>
+                <p className='details-distance'><b>Distance: </b>{hike.distance} miles round-trip</p>
+                <p className='details-elevation'><b>Elevation Gain: </b>{hike.elevation} feet</p>
                 <button className='favorite-button'>ADD TO FAVORITES</button>
             </div>
         </section>

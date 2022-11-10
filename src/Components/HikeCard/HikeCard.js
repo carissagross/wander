@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import location_icon from '../../Images/location_icon.png'
-
 import './HikeCard.css'
 
 const HikeCard = ({id, name, image, location, distance}) => {
