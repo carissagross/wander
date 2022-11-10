@@ -1,12 +1,70 @@
 .details-container {
     display: flex;
     align-items: center;
-    flex-direction: row;
-    width: 80vw;
-    height: 80vh;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
     margin-top: 18%;
     margin-bottom: 15%;
-    margin-left: 8%;
+}
+
+.specific-details-container {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    align-items: center;
+}
+
+.details-name {
+    color: #054a57;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 2.2em;
+    margin-bottom: 4%;
+}
+
+/* .details-name:after{
+    content: '';
+    width: 40%;
+    border-bottom: solid 1px black;
+    position: absolute;
+    content: center;
+    top: 40%;
+    text-align: center;
+    margin: auto;
+    /* z-index: 1; */
+
+.details-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.35em;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+/* .details-location {
+    font-family: 'League Gothic', sans-serif;
+    color: #054a57;
+    font-size: 3em;
+} */
+
+.details-difficulty {
+    margin-bottom: 2%;
+    font-family: 'Montserrat', sans-serif;
+    color: #054a57;
+    font-size: 1.25em;
+}
+
+.details-distance {
+    margin-bottom: 2%;
+    font-family: 'Montserrat', sans-serif;
+    color: #054a57;
+    font-size: 1.25em;
+}
+
+.details-elevation {
+    margin-bottom: 2%;
+    font-family: 'Montserrat', sans-serif;
+    color: #054a57;
+    font-size: 1.25em;
 }
 
 .image-container {
@@ -21,72 +79,33 @@
     width: 36em;
 }
 
-.specific-details-container {
-    display: flex;
-    flex-direction: column;
-    width: 40vw;
-    align-items: center;
-}
-
-.details-location {
-    font-family: 'League Gothic', sans-serif;
-    color: #054a57;
-    font-size: 3em;
-}
-
-.details-name {
-    color: #054a57;
-    font-family: 'League Gothic', sans-serif;
-    font-size: 2.2em;
-    margin-bottom: 4%;
-}
-
-.details-description {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.25em;
-    text-align: justify;
-    margin-bottom: 3%;
-}
-
-.details-difficulty {
-    margin-bottom: 2%;
-    font-family: 'Montserrat', sans-serif;
-    color: #054a57;
-    font-size: 1em;
-}
-
-.details-distance {
-    margin-bottom: 2%;
-    font-family: 'Montserrat', sans-serif;
-    color: #054a57;
-    font-size: 1em;
-}
-
-.distance-icon {
-    height: 2em;
-    width: 2em;
-}
-
-.details-elevation {
-    margin-bottom: 2%;
-    font-family: 'Montserrat', sans-serif;
-    color: #054a57;
-    font-size: 1em;
-}
-
-
 .button-container {
     display: flex;
     align-items: center;
     width: 100vw;
 }
 
-.favorite-button {
+.favorite-button, .home-button {
     margin-top: 5%;
     width: 18em;
     height: 3em;
-    background-color: white;
+    background-color: #054a57;
     font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.home-button {
+    margin-bottom: 5%;
+}
+
+.favorite-button:hover, .home-button:hover{
+    cursor: pointer;
+    background-color: white;
     color: #054a57;
+}
+
+.favorite-button:active, .home-button:hover{
+    box-shadow: 0 2px #666;
+    transform: translateY(4px)
 }
 

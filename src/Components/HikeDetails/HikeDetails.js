@@ -1,6 +1,7 @@
 import { render } from '@testing-library/react'
 // import React, { Component } from 'react'
 import React from 'react'
+import { Link } from "react-router-dom";
 import { getHikes } from '../../apiCalls'
 import compass_icon from '../../Images/compass_icon.png'
 
@@ -33,9 +34,6 @@ const HikeDetails = ({hike}) => {
 
     return (
         <section className='details-container'>
-            <div className='image-container'>
-                <img src={hike.image} alt={hike.name} className='details-image'/>
-            </div>
             <div className='specific-details-container'>
                 <p className='details-name'>{hike.name}</p>
                 {/* <p className='details-location'>{hike.location}</p> */}
@@ -43,7 +41,13 @@ const HikeDetails = ({hike}) => {
                 <p className='details-difficulty'><b>Difficulty:</b> {hike.difficulty}</p>
                 <p className='details-distance'><b>Distance: </b>{hike.distance} miles round-trip</p>
                 <p className='details-elevation'><b>Elevation Gain: </b>{hike.elevation} feet</p>
+            <div className='image-container'>
+                <img src={hike.image} alt={hike.name} className='details-image'/>
                 <button className='favorite-button'>ADD TO FAVORITES</button>
+                <Link to='/'>
+                <button className='home-button'>ALL HIKES</button>
+                </Link>
+            </div>
             </div>
         </section>
     )
