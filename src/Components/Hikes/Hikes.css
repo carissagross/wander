@@ -2,9 +2,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 75%;
-    width: 100%;
-    grid-gap: -10%;
-    grid-row-gap: 8%;
-    margin-top: 24em;
+    width: 100vw;
+    gap: 0px;
+    grid-gap: 1em;
+    row-gap: 10%;
+    margin-top: 22em;
     justify-items: center;
 }
+

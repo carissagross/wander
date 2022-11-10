@@ -5,17 +5,18 @@
     z-index: 1;
     background-color: #d3d3d3;
     background-color: #9BB7BB;
+    background-color: white;
     /* background-color: #bf9000; */
     backdrop-filter: blur(5px);
     width: 100vw;
-    height: 15em;
+    height: 12em;
     margin-bottom: 25%;
     align-items: center;
 }
 
 .logo {
     width: auto;
-    height: 20em;
+    height: 18em;
     margin-top: .5%;
     margin-left: 1%;
 }

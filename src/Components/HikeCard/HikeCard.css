@@ -7,7 +7,7 @@
     flex-wrap: nowrap;
     border: 3px solid #054a57;
     contain: content;
-    padding: 12px;
+    padding: 10px;
     justify-content: space-around;
 }
 
@@ -33,7 +33,7 @@
 
 .hike-location {
     font-family: 'League Gothic', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: #054a57;
 }
 
@@ -46,7 +46,7 @@
 .hike-name {
     font-family: 'League Gothic', sans-serif;
     color: #054a57;
-    font-size: 2em;
+    font-size: 1.7em;
     margin-top: 1%;
     margin-bottom: 3%;
 }

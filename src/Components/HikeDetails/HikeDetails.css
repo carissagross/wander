@@ -1,0 +1,26 @@
+.hike-details-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hike-details-card {
+    background-color: hsl(350deg 100% 88%);
+    width: 50em;
+    height: 30em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+.details-location {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+h3 {
+    color: black;
+}
+
