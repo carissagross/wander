@@ -1,10 +1,10 @@
 import './App.css'
 import React, { Component } from 'react'
-// import { Route } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import { getHikes } from '../../apiCalls'
-// import Header from '../Header/Header'
+import Header from '../Header/Header'
 import HikeDetails from '../HikeDetails/HikeDetails'
-// import Hikes from '../Hikes/Hikes'
+import Hikes from '../Hikes/Hikes'
 
 class App extends Component {
   constructor() {
@@ -42,10 +42,12 @@ class App extends Component {
   render() {
     return (
       <main className='App'>
-        {/* <Header /> */}
-        <HikeDetails />
-          {/* <Route exact path='/' render={() => <Hikes hikes={this.state.hikes} />} />
-          <Route exact path='/:id' render={({match}) => <HikeDetails hikeId={match.params.id} /> } /> */}
+        <Header />
+        {/* <HikeDetails /> */}
+          <Route exact path='/' render={() => <Hikes hikes={this.state.hikes} />} />
+          <Route exact path='/:id' render={({match}) => {
+            const singleHike = this.state.hikes.find(hike => hike.id === match.params.id)
+            return <HikeDetails hike={singleHike} /> }} />
       </main>
     )
   }
