@@ -35,6 +35,11 @@ class App extends Component {
     this.state.favoriteHikes.push(favHike)
   }
 
+  clearState = () => {
+    if (this.state.favoriteHikes.length > 0) {
+      
+    }}
+
   render() {
     return (
       <main className='App'>
