@@ -6,8 +6,14 @@ import './Header.css'
 const Header = () => {
     return (
         <div className='header'>
+             <Link to='/favorites'>
+                <button className='view-favorites'>VIEW FAVORITES</button>
+            </Link>
             <Link to='/'>
                 <img src={logo} alt="logo" className="logo" />
+            </Link>
+            <Link to='/'>
+                <button className='view-hikes'>VIEW ALL HIKES</button>
             </Link>
         </div>
     )

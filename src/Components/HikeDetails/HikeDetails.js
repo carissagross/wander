@@ -8,7 +8,7 @@ import compass_icon from '../../Images/compass_icon.png'
 
 import './HikeDetails.css'
 
-const HikeDetails = ({hike}) => {
+const HikeDetails = ({hike, saveFavoriteHike}) => {
 // class HikeDetails extends Component {
 //     constructor() {
 //         super()
@@ -41,13 +41,18 @@ const HikeDetails = ({hike}) => {
                 <p className='details-difficulty'><b>Difficulty:</b> {hike.difficulty}</p>
                 <p className='details-distance'><b>Distance: </b>{hike.distance} miles round-trip</p>
                 <p className='details-elevation'><b>Elevation Gain: </b>{hike.elevation} feet</p>
+            </div>
             <div className='image-container'>
                 <img src={hike.image} alt={hike.name} className='details-image'/>
-                <button className='favorite-button'>ADD TO FAVORITES</button>
-                <Link to='/'>
-                <button className='home-button'>ALL HIKES</button>
-                </Link>
             </div>
+            <div className='button-container'>
+                <button className='favorite-button' onClick={() => saveFavoriteHike(hike.id)}>ADD TO FAVORITES</button>
+                {/* <Link to='/'>
+                    <button className='home-button'>ALL HIKES</button>
+                </Link>
+                <Link to='/favorites'>
+                <button className='view-favorites'>VIEW FAVORITES</button>
+                </Link> */}
             </div>
         </section>
     )
