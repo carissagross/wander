@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import { getHikes } from '../../apiCalls'
 import Header from '../Header/Header'
+import PropTypes from 'prop-types';
 import HikeDetails from '../HikeDetails/HikeDetails'
 import FavoriteHikes from '../FavoriteHikes/FavoriteHikes'
 import Hikes from '../Hikes/Hikes'
@@ -37,7 +38,7 @@ class App extends Component {
 
   clearState = () => {
     if (this.state.favoriteHikes.length > 0) {
-      
+
     }}
 
   render() {

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types'
 import location_icon from '../../Images/location_icon.png'
 import './HikeCard.css'
 
@@ -16,3 +17,11 @@ const HikeCard = ({id, name, image, location, distance}) => {
     )
 }
 export default HikeCard
+
+HikeCard.propTypes = {
+    id: PropTypes.string,
+    name: PropTypes.string,
+    image: PropTypes.string,
+    location: PropTypes.string,
+    distance: PropTypes.string,
+}

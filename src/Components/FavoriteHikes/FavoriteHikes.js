@@ -18,8 +18,10 @@ const FavoriteHikes = ({ hikes }) => {
     return (
         <div className='favorites-title-container'>
             <p className='title'>FAVORITE HIKES</p>
+        <div className='error-container'>
+                {!hikes.length && <p className='fav-error'>You have no favorites, yet! Add some!</p>}
+        </div>
         <div className='favorites-container'>
-                {!hikes.length && <h2 className='fav-error'>You have no favorites, yet! Add some!</h2>}
                 {favHike}
             </div>
         </div>
