@@ -5,7 +5,6 @@ import PropTypes from 'prop-types'
 
 
 const FavoriteHikes = ({ favHikes }) => {
-    console.log('hikes', favHikes)
     const favHike = favHikes.map(hike => {
             return (
                 <HikeCard
@@ -43,5 +42,5 @@ const favoritesShape = {
 }
 
 FavoriteHikes.propTypes = {
-    hikes: PropTypes.arrayOf(PropTypes.shape(favoritesShape)).isRequired
+    favHikes: PropTypes.arrayOf(PropTypes.shape(favoritesShape)).isRequired
 }
