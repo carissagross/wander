@@ -26,7 +26,7 @@ class App extends Component {
       this.setState({hikes: data.hikes})
     } catch (error) {
       this.setState({
-        error: 'There was an error fetching the hikes'
+        error: 'There was an error fetching the hikes - please reload and try again.'
       })
     }
   }
@@ -44,9 +44,9 @@ class App extends Component {
   // }
 
   render() {
-    // console.log('FAV', this.state.favoriteHikes)
     return (
       <main className='App'>
+        <p className='load-error'>{this.state.error}</p>
         <Header />
         <Switch>
           <Route exact path='/' render={() => <Hikes hikes={this.state.hikes} />} />

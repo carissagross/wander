@@ -4,6 +4,13 @@
   clear: both;
 }
 
+.load-error {
+  font-family: 'League Gothic', sans-serif;
+  font-size: 2em;
+  margin-top: 3%;
+  color: #054a57;
+}
+
 .App {
   display: flex;
   flex-direction: column;
