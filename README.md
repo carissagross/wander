@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Wander
+(Screenshot here)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contens
+- [Introduction](#introduction)
+- [Technologies](#technologies)
+- [Features](#features)
+- [Possible Future Extensions](#possible-future-extensions)
+- [Set Up](#set-up)
+- [Organizational Resources](#organizational-resources)
+- [Sources](#sources)
+- [Contributors](#contributors)
+- [Project Specs](#project-specs)
 
-## Available Scripts
+## Introduction
+- This application helps users find hiking and backpacking trails in Colorado (and are some of my favorites!). I created my own API using Express and used my own photography for the hike images.
 
-In the project directory, you can run:
+## Technologies
+- React
+- Express
+- Cypress
+- Router
+- Heroku
+- HTML
+- CSS
 
-### `npm start`
+## Features
+- On page load, users will see all of the hikes
+- Save their favorite hikes and view on the favorites page
+- Each hike's details include a description, distance, difficulty, and elevation gain.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Possible Future Extentsions
+- Add more hikes!
+- Allow user to add their own trips
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## GIF
+- GIF HERE
 
-### `npm test`
+## Set Up
+git clone github link here
+npm install
+npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Deployed Application: https://radiance-delta.vercel.app/
+- Deployed API: https://radiance-app.herokuapp.com/api/v1/affirmations
 
-### `npm run build`
+## Organizational Resources:
+- [Project board](https://trello.com/b/DAQ4krma/stretchtech-be)
+- [Excalidraw](https://excalidraw.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Sources
+- [MDN](http://developer.mozilla.org/en-US/)
+- [W3Schools](https://www.w3schools.com/)
+- [CSS-TRICKS](https://css-tricks.com/)
+- [Knex](https://knexjs.org/guide/)
+- [postgreSQL](https://www.postgresql.org/docs/current/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contributors
+- [Carissa Gross](https://github.com/carissagross)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Project Specs
+- The project spec & rubric can be found [here](https://frontend.turing.edu/projects/module-3/showcase.html)
