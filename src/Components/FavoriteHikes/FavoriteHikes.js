@@ -1,6 +1,8 @@
 import React from 'react'
 import './FavoriteHikes.css'
 import HikeCard from '../HikeCard/HikeCard'
+import PropTypes from 'prop-types'
+
 
 const FavoriteHikes = ({ hikes }) => {
     const favHike = hikes.map(hike => {
@@ -28,3 +30,16 @@ const FavoriteHikes = ({ hikes }) => {
     )
 }
 export default FavoriteHikes
+
+const favoritesShape = {
+    id: PropTypes.string,
+    name: PropTypes.string,
+    image: PropTypes.string,
+    location: PropTypes.string,
+    distance: PropTypes.string,
+    key: PropTypes.string
+}
+
+FavoriteHikes.propTypes = {
+    hikes: PropTypes.arrayOf(PropTypes.shape(favoritesShape)).isRequired
+}

@@ -1,6 +1,7 @@
 import { render } from '@testing-library/react'
 // import React, { Component } from 'react'
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from "react-router-dom";
 import { getHikes } from '../../apiCalls'
 import compass_icon from '../../Images/compass_icon.png'
@@ -58,3 +59,17 @@ const HikeDetails = ({hike, saveFavoriteHike}) => {
     )
 }
 export default HikeDetails
+
+const hikesShape = {
+    name: PropTypes.string,
+    description: PropTypes.string,
+    difficulty: PropTypes.string,
+    distance: PropTypes.string,
+    elevation: PropTypes.string,
+    image: PropTypes.string,
+    saveFavoriteHike: PropTypes.func,
+}
+
+HikeDetails.propTypes = {
+    hikes: PropTypes.arrayOf(PropTypes.shape(hikesShape)).isRequired
+}
