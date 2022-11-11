@@ -10,6 +10,7 @@ import compass_icon from '../../Images/compass_icon.png'
 import './HikeDetails.css'
 
 const HikeDetails = ({hike, saveFavoriteHike}) => {
+    console.log(hike)
 // class HikeDetails extends Component {
 //     constructor() {
 //         super()
@@ -60,16 +61,14 @@ const HikeDetails = ({hike, saveFavoriteHike}) => {
 }
 export default HikeDetails
 
-const hikesShape = {
+HikeDetails.propTypes = {
+    hikeDetails: PropTypes.shape({
     name: PropTypes.string,
     description: PropTypes.string,
     difficulty: PropTypes.string,
     distance: PropTypes.string,
     elevation: PropTypes.string,
-    image: PropTypes.string,
+    image: PropTypes.string
+}),
     saveFavoriteHike: PropTypes.func,
-}
-
-HikeDetails.propTypes = {
-    hikes: PropTypes.arrayOf(PropTypes.shape(hikesShape)).isRequired
 }

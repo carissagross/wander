@@ -3,23 +3,18 @@
     flex-direction: row;
     position: fixed;
     z-index: 1;
-    background-color: hsl(0deg 0% 83%);
-    background-color: hsl(187deg 19% 67%);
     background-color: hsl(0deg 0% 100%);
-    /* background-color: hsl(45deg 100% 37%); */
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
     width: 100vw;
-    height: 12em;
-    margin-bottom: 25%;
+    height: 35vh;
+    /* margin-bottom: 25%; */
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .logo {
     width: auto;
-    height: 15em;
-    margin-top: 35%;
+    height: 14em;
+    margin-top: 28%;
 }
 
 .view-hikes {
@@ -28,8 +23,6 @@
     background-color: white;
     font-family: 'Montserrat', sans-serif;
     color: #054a57;
-    margin-left: 3%;
-    margin-top: 20%;
 }
 
 .view-favorites {
@@ -38,7 +31,6 @@
     background-color: white;
     font-family: 'Montserrat', sans-serif;
     color: #054a57;
-    margin-top: 20%;
 }
 
 .view-hikes:hover, .view-favorites:hover {
