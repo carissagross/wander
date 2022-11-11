@@ -13,6 +13,7 @@ class App extends Component {
     this.state = {
       hikes: [],
       favoriteHikes: [],
+      filteredHikes: [],
       error: ''
     }
   }
@@ -36,16 +37,19 @@ class App extends Component {
   }
 
   render() {
+    console.log('HI', this.state.favoriteHikes)
     return (
       <main className='App'>
         <Header />
-        {/* <NavBar /> */}
         <Switch>
           <Route exact path='/' render={() => <Hikes hikes={this.state.hikes} />} />
-          <Route exact path='/favorites' render={() => <FavoriteHikes hikes={this.state.favoriteHikes} /> } />
+
+          <Route exact path='/favorites' render={() => <FavoriteHikes favHikes={this.state.favoriteHikes} /> } />
+
           <Route exact path='/:id' render={({match}) => {
             const singleHike = this.state.hikes.find(hike => hike.id === match.params.id)
-            return <HikeDetails hike={singleHike} saveFavoriteHike={this.saveFavoriteHike} /> }} />
+            return <HikeDetails hike={singleHike} saveHike={this.saveFavoriteHike} /> }} />
+
         </Switch>
       </main>
     )

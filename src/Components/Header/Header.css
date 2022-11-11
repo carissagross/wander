@@ -5,7 +5,7 @@
     z-index: 1;
     background-color: hsl(0deg 0% 100%);
     width: 100vw;
-    height: 35vh;
+    height: 30vh;
     /* margin-bottom: 25%; */
     align-items: center;
     justify-content: space-evenly;
@@ -14,7 +14,6 @@
 .logo {
     width: auto;
     height: 14em;
-    margin-top: 28%;
 }
 
 .view-hikes {
