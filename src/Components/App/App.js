@@ -1,9 +1,8 @@
 import './App.css'
 import React, { Component } from 'react'
-import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import { getHikes } from '../../apiCalls'
 import Header from '../Header/Header'
-import NavBar from '../NavBar/NavBar'
 import HikeDetails from '../HikeDetails/HikeDetails'
 import FavoriteHikes from '../FavoriteHikes/FavoriteHikes'
 import Hikes from '../Hikes/Hikes'
@@ -22,7 +21,7 @@ class App extends Component {
     try {
       const result = await getHikes()
       const data = await result.json()
-      // console.log(data.hikes)
+
       this.setState({hikes: data.hikes})
     } catch (error) {
       this.setState({
@@ -41,11 +40,13 @@ class App extends Component {
       <main className='App'>
         <Header />
         {/* <NavBar /> */}
+        <Switch>
           <Route exact path='/' render={() => <Hikes hikes={this.state.hikes} />} />
+          <Route exact path='/favorites' render={() => <FavoriteHikes hikes={this.state.favoriteHikes} /> } />
           <Route exact path='/:id' render={({match}) => {
             const singleHike = this.state.hikes.find(hike => hike.id === match.params.id)
-            return <HikeDetails hike={singleHike} /> }} />
-          <Route exact path='/favorites' render={() => <FavoriteHikes hikes={this.state.favoriteHikes} /> } />
+            return <HikeDetails hike={singleHike} saveFavoriteHike={this.saveFavoriteHike} /> }} />
+        </Switch>
       </main>
     )
   }

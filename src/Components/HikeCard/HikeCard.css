@@ -35,13 +35,12 @@
     width: 22em;
     height: 4em;
     position: fixed;
-    /* padding: 6%; */
     top: 0;
 }
 
 .hike-image {
     height: 22em;
-    width: 22em;
+    width: 23em;
     margin-top: 6%;
 }
 
