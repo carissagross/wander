@@ -14,7 +14,9 @@
 - [Project Specs](#project-specs)
 
 ## Introduction
-- This application helps users find hiking and backpacking trails in Colorado (and are some of my favorites!). I created my own API using Express and used my own photography for the hike images.
+- When I post photos from my adventures, people usually ask about the location and other hike details.
+- This application helps users find hiking and backpacking trails in Colorado (and are some of my favorites!).
+- I created my own API using Express and used my own photography for the hike images.
 
 ## Technologies
 - React
