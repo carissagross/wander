@@ -35,16 +35,12 @@ class App extends Component {
 
   saveFavoriteHike = (id) => {
     const favHike = this.state.hikes.find(hike => hike.id === id)
-    this.state.favoriteHikes.push(favHike)
+
+    if (!this.state.favoriteHikes) {
+      this.state.favoriteHikes.push(favHike)
+    }
   }
-
-  // saveFavoriteHike = (id) => {
-  //   const favHike = this.state.hikes.find(hike => hike.id === id)
-  //   if (!this.state.favoriteHikes.includes(favHike)) {
-  //     return this.setState({favoriteHikes: favHike})
-  //   }
-  // }
-
+  
   render() {
     return (
       <main className='App'>

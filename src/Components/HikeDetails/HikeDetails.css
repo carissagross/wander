@@ -7,11 +7,12 @@
     padding-top: 15%;
 }
 
-.specific-details-wrapper {
+.image-name-description-wrapper {
+    width: 45vw;
     display: flex;
     flex-direction: column;
-    width: 75vw;
     align-items: center;
+    color: #054a57;
 }
 
 .details-name {
@@ -20,11 +21,27 @@
     font-size: 2.2em;
 }
 
+.details-image {
+    height: 36em;
+    width: 36em;
+    padding: 1%;
+    background-color: #054a57;
+}
+
 .details-description {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.35em;
+    font-size: 1.30em;
     text-align: center;
-    margin-bottom: 2%;
+    color: #054a57;
+    margin-top: 2%;
+}
+
+.other-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    align-items: center;
+    padding: 2%;
 }
 
 .details-difficulty {
@@ -48,35 +65,29 @@
     font-size: 1.25em;
 }
 
-.image-container {
-    display: flex;
-    width: 40vw;
-    flex-direction: column;
-    align-items: center;
-}
-
-.details-image {
-    height: 36em;
-    width: 36em;
-}
-/* 
-.button-container {
-    margin-top: 2%;
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-} */
-
 .favorite-button {
     width: 18em;
     height: 3em;
+    appearance: none;
     background-color: #054a57;
-    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #054a57;
+    box-sizing: border-box;
     color: white;
-    margin-bottom: 3%;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 2%;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
 }
 
 .favorite-button:hover {
@@ -114,7 +125,9 @@
         text-align: center;
     }
 
-    .details-difficulty, .details-distance, .details-elevation  {
+    .details-difficulty,
+    .details-distance,
+    .details-elevation {
         font-size: 1em;
     }
 
@@ -131,8 +144,6 @@
     }
 }
 
-@media only screen and (min-width:481px) and (max-width:768px) {
-}
+@media only screen and (min-width:481px) and (max-width:768px) {}
 
-@media only screen and (min-width: 769px) and (max-width:1024px) {
-}
+@media only screen and (min-width: 769px) and (max-width:1024px) {}

@@ -12,23 +12,68 @@
 
 
 @media (max-width:600px) {
+}
+
+@media only screen and (min-width:350px) and (max-width:480px) {
     .hikes-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 100%;
-        width: 100%;
-        margin-top: 20%;
+        /* height: 100%;
+        width: 100%; */
+        margin-top: 80%;
     }
-
+    
+    .logo {
+        width: auto;
+        height: 10em;
+        margin-top: 15%;
+    }
 }
 
 @media only screen and (min-width:300px) and (max-width:480px) {
 }
 
 @media only screen and (min-width:481px) and (max-width:768px) {
+    .hikes-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* height: 100%;
+        width: 100%; */
+        margin-top: 40%;
+        flex-wrap: wrap;
+    }
+    
+    .logo {
+        width: auto;
+        height: 10em;
+        margin-top: 15%;
+    }
+
+    .header {
+        width: 100vw;
+    }
 }
 
-@media only screen and (min-width: 769px) and (max-width:1024px) {
-}
+/* @media only screen and (min-width: 769px) and (max-width:1024px) {
+    .hikes-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20%;
+        flex-wrap: wrap;
+        padding: 10%;
+    }
+    
+    .logo {
+        width: auto;
+        height: 10em;
+        margin-top: 15%;
+    }
+
+    .header {
+        width: 100vw;
+    }
+} */
 

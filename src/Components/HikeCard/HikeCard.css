@@ -10,6 +10,7 @@
     padding: 10px;
     justify-content: space-around;
     text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .hike-card:hover {
@@ -42,6 +43,7 @@
     height: 22em;
     width: 23em;
     margin-top: 6%;
+    object-fit: cover;
 }
 
 .hike-distance {
