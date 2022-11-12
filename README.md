@@ -1,7 +1,8 @@
 # Wander
-[Screenshot 2022-11-11 at 12 37 55 PM](https://user-images.githubusercontent.com/83977544/201417221-331fc38b-7a28-4d88-b6c4-0cf95a8fc9cb.png)
+<img width="1631" alt="Screenshot 2022-11-12 at 9 32 25 AM" src="https://user-images.githubusercontent.com/83977544/201484404-9f8241bd-4eab-41aa-9927-74069ad144da.png">
+<img width="1626" alt="Screenshot 2022-11-12 at 9 32 45 AM" src="https://user-images.githubusercontent.com/83977544/201484417-8e3da180-8196-4ba8-95e0-c902dab1c2eb.png">
 
-## Table of Contens
+## Table of Contents
 - [Introduction](#introduction)
 - [Technologies](#technologies)
 - [Features](#features)
