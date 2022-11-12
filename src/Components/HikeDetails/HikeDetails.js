@@ -33,39 +33,30 @@ const HikeDetails = ({hike, saveHike}) => {
 
     return (
         <section className='details-container'>
-            <div className='specific-details-container'>
+            <div className='specific-details-wrapper'>
                 <p className='details-name'>{hike.name}</p>
-                {/* <p className='details-location'>{hike.location}</p> */}
                 <p className='details-description'>{hike.description}</p>
                 <p className='details-difficulty'><b>Difficulty:</b> {hike.difficulty}</p>
                 <p className='details-distance'><b>Distance: </b>{hike.distance} miles round-trip</p>
                 <p className='details-elevation'><b>Elevation Gain: </b>{hike.elevation} feet</p>
-            </div>
-            <div className='image-container'>
-                <img src={hike.image} alt={hike.name} className='details-image'/>
-            </div>
-            <div className='button-container'>
                 <button className='favorite-button' onClick={() => saveHike(hike.id)}>ADD TO FAVORITES</button>
-                {/* <Link to='/'>
-                    <button className='home-button'>ALL HIKES</button>
-                </Link>
-                <Link to='/favorites'>
-                <button className='view-favorites'>VIEW FAVORITES</button>
-                </Link> */}
+            </div>
+            <div className='image-wrapper'>
+                <img src={hike.image} alt={hike.name} className='details-image'/>
             </div>
         </section>
     )
 }
 export default HikeDetails
 
-// HikeDetails.propTypes = {
-//     hikeDetails: PropTypes.shape({
-//     name: PropTypes.string,
-//     description: PropTypes.string,
-//     difficulty: PropTypes.string,
-//     distance: PropTypes.string,
-//     elevation: PropTypes.string,
-//     image: PropTypes.string
-// }),
-//     saveFavoriteHike: PropTypes.func,
-// }
+HikeDetails.propTypes = {
+    hikeDetails: PropTypes.shape({
+    name: PropTypes.string,
+    description: PropTypes.string,
+    difficulty: PropTypes.string,
+    distance: PropTypes.string,
+    elevation: PropTypes.string,
+    image: PropTypes.string
+}),
+    saveFavoriteHike: PropTypes.func,
+}

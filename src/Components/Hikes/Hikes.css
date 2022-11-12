@@ -1,25 +1,34 @@
 .hikes-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 100%;
-    width: 100%;
+    height: 90vh;
+    width: 100vw;
     gap: 0px;
     grid-gap: 1em;
     row-gap: 10%;
-    margin-top: 18%;
+    margin-top: 15%;
     justify-items: center;
 }
 
 
-@media (max-width:500px) {
+@media (max-width:600px) {
     .hikes-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 110%;
+        height: 100%;
         width: 100%;
-        justify-content: center;
+        margin-top: 20%;
     }
 
+}
+
+@media only screen and (min-width:300px) and (max-width:480px) {
+}
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+}
+
+@media only screen and (min-width: 769px) and (max-width:1024px) {
 }
 

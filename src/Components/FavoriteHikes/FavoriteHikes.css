@@ -1,11 +1,12 @@
 .favorites-title-container {
     display: flex;
     width: 100vw;
-    /* height: 15vh; */
-    margin-top: 22%;
+    height: 10vh;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 15%;
+    content: contain;
     align-items: center;
+    margin-bottom: 4%;
 }
 
 .title {
@@ -17,13 +18,13 @@
 .favorites-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* height: 70vh;
-    width: 100vw; */
-    gap: 0px;
+    height: 90vh;
+    width: 100vw;
+    gap: 2px;
     grid-gap: 1em;
     row-gap: 10%;
     justify-items: center;
-    margin-bottom: -30%;
+    margin-top: 2%;
 }
 
 .fav-error {
@@ -32,21 +33,22 @@
     color: #054a57;
 }
 
-.error-container {
+/* .error-container {
     display: flex;
     width: 100vw;
     height: 15vh;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 @media only screen and (max-width:876px) {
     .favorites-title-container {
+        margin-top: 15%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top:60%;
+        margin-top: 50%;
     }
 
     .favorites-container {
@@ -55,15 +57,11 @@
     }
 
     .fav-error {
-        font-family: 'League Gothic', sans-serif;
-        font-size: 1em;
-        color: #054a57;
+        font-size: 2em;
     }
 
     .title {
-        color: #054a57;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1em;
+        font-size: 2em;
     }
 
 }

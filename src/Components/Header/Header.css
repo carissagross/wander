@@ -5,15 +5,17 @@
     z-index: 1;
     background-color: hsl(0deg 0% 100%);
     width: 100vw;
-    height: 30vh;
+    height: 24vh;
     /* margin-bottom: 25%; */
     align-items: center;
     justify-content: space-evenly;
+    position: fixed;
 }
 
 .logo {
     width: auto;
     height: 14em;
+    margin-top: 15%;
 }
 
 .view-hikes {
@@ -43,15 +45,9 @@
     transform: translateY(4px)
 }
 
-@media (max-width:600px) {
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        width: 100vw;
-        height: 18em;
-    }
+@media (max-width:768px) {
+   
+
     .logo {
         margin-top: 5%;
         width: auto;
@@ -71,4 +67,14 @@
         margin-top: 2%;
     }
 }
-  
+
+@media only screen and (min-width:300px) and (max-width:480px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100vw;
+        height: 40vh;
+    }
+}

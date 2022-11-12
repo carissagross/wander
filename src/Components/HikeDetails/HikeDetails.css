@@ -2,16 +2,15 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* width: 100vw;
-    height: 100vh; */
-    margin-top: 15%;
-    margin-bottom: 20%;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 15%;
 }
 
-.specific-details-container {
+.specific-details-wrapper {
     display: flex;
     flex-direction: column;
-    width: 40vw;
+    width: 75vw;
     align-items: center;
 }
 
@@ -19,25 +18,24 @@
     color: #054a57;
     font-family: 'League Gothic', sans-serif;
     font-size: 2.2em;
-    margin-bottom: 4%;
 }
 
 .details-description {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.35em;
     text-align: center;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
 }
 
 .details-difficulty {
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     font-family: 'Montserrat', sans-serif;
     color: #054a57;
     font-size: 1.25em;
 }
 
 .details-distance {
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     font-family: 'Montserrat', sans-serif;
     color: #054a57;
     font-size: 1.25em;
@@ -61,16 +59,16 @@
     height: 36em;
     width: 36em;
 }
-
+/* 
 .button-container {
     margin-top: 2%;
     display: flex;
     width: 100vw;
-    height: 10vh;
+    height: 100vh;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-}
+} */
 
 .favorite-button {
     width: 18em;
@@ -78,6 +76,7 @@
     background-color: #054a57;
     font-family: 'Montserrat', sans-serif;
     color: white;
+    margin-bottom: 3%;
 }
 
 .favorite-button:hover {
@@ -92,14 +91,6 @@
 }
 
 @media (max-width:600px) {
-
-    .details-container {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 75%;
-        margin-bottom: 30%;
-    }
 
     .specific-details-container {
         display: flex;
@@ -121,7 +112,6 @@
     .details-description {
         font-size: 1.25em;
         text-align: center;
-        margin-bottom: 6%;
     }
 
     .details-difficulty, .details-distance, .details-elevation  {
@@ -130,3 +120,19 @@
 
 }
 
+@media only screen and (min-width:300px) and (max-width:480px) {
+    .details-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 80vw;
+        height: 30vh;
+        margin-top: 20%;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+}
+
+@media only screen and (min-width: 769px) and (max-width:1024px) {
+}
