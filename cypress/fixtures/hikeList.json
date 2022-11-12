@@ -1,0 +1,34 @@
+{
+  "hikes": [
+    {
+      "id": "1",
+      "name": "Ice Lake Basin",
+      "location": "Silverthorne, CO",
+      "difficulty": "Hard",
+      "distance": "8.4",
+      "elevation": "2,877",
+      "description": "This wonderful hike visits two gorgeous lake basins, traverses wildflower-filled meadows and passes numerous waterfalls.  Opportunities for exploration include side trips to Island and Fuller Lakes.  This hike is steep but worth experiencing the ice blue hue of the lake.  Dogs are welcome, but must be on leash.",
+      "image": "https://i.imgur.com/eIdl0jU.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Cascade Creek Trail to Mirror Lake",
+      "location": "Tabernash, CO",
+      "difficulty": "Hard",
+      "distance": "16",
+      "elevation": "2,322",
+      "description": "Starting from the Monarch Lake Trailhead, this is a well-maintained trail that is never too steep, so it is a fun hike from start to finish.  The destination of Crater Lake provides 360 degrees of stunning cliffs, glaciers, and a pristine alpine lake. Dogs are welcome, but must be on a leash.",
+      "image": "https://i.imgur.com/CaNfatY.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Island Lake via Ice Lakes",
+      "location": "Silverthorne, CO",
+      "difficulty": "Hard",
+      "distance": "7.7",
+      "elevation": "2,680",
+      "description": "The hike to the Island Lake lake is just over half a mile from Ice Lake and gains some 200 feet of elevation. It is a beautiful green lake with a rock island in the middle, which gives the lake its name. Dogs are welcome but must be on leash.",
+      "image": "https://i.imgur.com/RppUqIS.jpg"
+    }
+  ]
+}
