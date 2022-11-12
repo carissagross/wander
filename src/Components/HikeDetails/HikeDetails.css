@@ -1,0 +1,133 @@
+.details-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 22%;
+    margin-bottom: 20%;
+}
+
+.specific-details-container {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    align-items: center;
+}
+
+.details-name {
+    color: #054a57;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 2.2em;
+    margin-bottom: 4%;
+}
+
+.details-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.35em;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.details-difficulty {
+    margin-bottom: 2%;
+    font-family: 'Montserrat', sans-serif;
+    color: #054a57;
+    font-size: 1.25em;
+}
+
+.details-distance {
+    margin-bottom: 2%;
+    font-family: 'Montserrat', sans-serif;
+    color: #054a57;
+    font-size: 1.25em;
+}
+
+.details-elevation {
+    margin-bottom: 2%;
+    font-family: 'Montserrat', sans-serif;
+    color: #054a57;
+    font-size: 1.25em;
+}
+
+.image-container {
+    display: flex;
+    width: 40vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details-image {
+    height: 36em;
+    width: 36em;
+}
+
+.button-container {
+    margin-top: 2%;
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.favorite-button {
+    width: 18em;
+    height: 3em;
+    background-color: #054a57;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.favorite-button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #054a57;
+}
+
+.favorite-button:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(4px)
+}
+
+@media (max-width:600px) {
+
+    .details-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        margin-top: 70%;
+        margin-bottom: 30%;
+    }
+
+    .specific-details-container {
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+        align-items: center;
+    }
+
+    .details-name {
+        color: #054a57;
+        font-family: 'League Gothic', sans-serif;
+        font-size: 1.5em;
+        margin-bottom: 4%;
+    }
+
+    .details-image {
+        height: 28em;
+        width: 28em;
+    }
+
+    .details-description {
+        font-size: 1.35em;
+        text-align: center;
+        margin-bottom: 6%;
+    }
+
+
+}
+

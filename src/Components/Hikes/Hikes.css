@@ -1,0 +1,21 @@
+.hikes-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 75%;
+    width: 100vw;
+    gap: 0px;
+    grid-gap: 1em;
+    row-gap: 10%;
+    margin-top: 20em;
+    justify-items: center;
+}
+
+@media (max-width:500px){
+    .hikes-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+}
+

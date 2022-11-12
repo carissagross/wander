@@ -1,0 +1,83 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 1;
+    background-color: hsl(0deg 0% 83%);
+    background-color: hsl(187deg 19% 67%);
+    background-color: hsl(0deg 0% 100%);
+    /* background-color: hsl(45deg 100% 37%); */
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    width: 100vw;
+    height: 12em;
+    margin-bottom: 25%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    width: auto;
+    height: 17em;
+    margin-top: 35%;
+}
+
+.view-hikes {
+    width: 15em;
+    height: 3em;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    color: #054a57;
+    margin-left: 3%;
+    margin-top: 20%;
+}
+
+.view-favorites {
+    width: 15em;
+    height: 3em;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    color: #054a57;
+    margin-top: 20%;
+}
+
+.view-hikes:hover, .view-favorites:hover {
+    cursor: pointer;
+    background-color:  #054a57;
+    color: white;
+}
+
+.view-hikes:hover, .view-favorites:hover {
+    box-shadow: 0 2px #666;
+    transform: translateY(4px)
+}
+
+@media (max-width:600px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100vw;
+        height: 18em;
+    }
+    .logo {
+        margin-top: 5%;
+        width: auto;
+        height: 10em;
+    }
+
+    .view-hikes {
+        width: 10em;
+        height: 2em;
+        margin-top: 2%;
+
+    }
+
+    .view-favorites {
+        width: 10em;
+        height: 2em;
+        margin-top: 2%;
+    }
+}
+  
