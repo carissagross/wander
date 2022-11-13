@@ -115,7 +115,9 @@
     }
 }
 
-@media screen and (max-width:768px) {
+/* The following media queries are not working, the ones below override the code above and it is no longer taking in the properties for mobile friendly*/
+
+/* @media screen and (max-width:768px) {
     .hike-card {
         height: 48%;
         width: 30%;
@@ -155,9 +157,9 @@
         height: 40%;
         width: auto;
     }
-}
+} */
 
-@media screen and (max-width:1358px) {
+/* @media screen and (max-width:1358px) {
     .hike-card {
         height: 70%;
         width: 20%;
@@ -195,44 +197,4 @@
     .location-icon {
         height: 40%;
     }
-}
-
-@media screen and (max-width:1368px) {
-    .hike-card {
-        height: 58%;
-        width: 20%;
-    }
-
-    .hike-name-container {
-        height: 14%;
-        text-align: center;
-    }
-
-    .hike-name {
-        font-size: 150%;
-    }
-
-    .hike-image {
-        width: 100%;
-        margin-top: 20%;
-        margin-bottom: 4%;
-    }
-
-    .hike-distance {
-        font-size: 90%;
-        margin-bottom: 4%;
-    }
-
-    .hike-location {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 130%;
-        height: 20%;
-        width: 100%;
-    }
-
-    .location-icon {
-        height: 40%;
-    }
-}
+} */

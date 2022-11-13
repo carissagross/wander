@@ -13,18 +13,18 @@ describe('App', () => {
       .get('.view-hikes').should('be.visible')
   })
 
-  // it('should receive an error message if the data is not fetched', () => {
-  //   cy.intercept({
-  //     method: 'GET',
-  //     url: 'https://wander-hikes-api.herokuapp.com/api/v1/hikes/',
-  //   },
-  //   {
-  //     statusCode: 404,
-  //     body: {
-  //       message: 'There was an error fetching the hikes - please reload and try again.'
-  //     }
-  //   })
-  // })
+  it('should receive an error message if the data is not fetched', () => {
+    cy.intercept({
+      method: 'GET',
+      url: 'https://wander-hikes-api.herokuapp.com/api/v1/hikess/',
+    },
+    {
+      statusCode: 404,
+      body: {
+        message: 'There was an error fetching the hikes - please reload and try again.'
+      }
+    })
+  })
 
   it('on page load, it should see hike cards with hike details', () => {
     cy.get('.hikes-container')
@@ -44,6 +44,11 @@ describe('App', () => {
       .get('.details-elevation')
       .get('.details-image')
       .get('.favorite-button').should('be.visible')
+  })
+
+  it('should be able to click the logo to view all hikes', () => {
+    cy.get('.logo').click()
+    .url().should('include', '/')
   })
 
   it('should click view all hikes button to go back and view all hikes', () => {

@@ -6,7 +6,7 @@ import './Header.css'
 const Header = () => {
     return (
         <div className='header'>
-             <Link className='favorite-button-container' to='/favorites'>
+            <Link className='favorite-button-container' to='/favorites'>
                 <button className='view-favorites'>VIEW FAVORITES</button>
             </Link>
             <Link className='logo-container' to='/'>

@@ -4,6 +4,7 @@ import HikeCard from '../HikeCard/HikeCard'
 import PropTypes from 'prop-types'
 
 const FavoriteHikes = ({ favHikes }) => {
+    console.log(favHikes)
     const favHike = favHikes.map(hike => {
         return (
             <HikeCard
@@ -16,8 +17,8 @@ const FavoriteHikes = ({ favHikes }) => {
             />
         )
     }
-    )
-    return (
+)
+        return (
         <div>
             <div className='favorites-title-container'>
                 <p className='title'>FAVORITE HIKES</p>
