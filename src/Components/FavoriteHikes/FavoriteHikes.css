@@ -31,8 +31,8 @@
 @media screen and (max-width:390px) {
     .favorites-container {
         width: 100vw;
-        height: 80vh;
-        padding: 1px;
+        height: 100vh;
+        padding: 2px;
     }
 
     .favorites-title-container {

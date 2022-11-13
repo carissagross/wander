@@ -100,12 +100,13 @@
 @media screen and (max-width:414px) {
     .details-container {
         margin-top: 10vh;
-        height: 105vh;
+        height: 90vh;
     }
 
     .image-name-description-wrapper {
-        height: 65%;
+        height: 70%;
         width: 80%;
+        margin-bottom: 10%;
     }
 
     .details-description {
