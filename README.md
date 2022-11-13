@@ -35,7 +35,8 @@
 
 ## Possible Future Extentsions
 - Add more hikes!
-- Allow user to add their own trips
+- Allow user to add their own hikes
+- Filter hikes by location or milage round trip.
 
 ## GIF
 - GIF HERE
