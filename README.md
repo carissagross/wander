@@ -48,7 +48,7 @@ npm install
 npm start
 
 - Deployed Application: https://wander-hiking-app.herokuapp.com/
-- Deployed API: https://radiance-app.herokuapp.com/api/v1/affirmations
+- Deployed API: https://wander-hikes-api.herokuapp.com/api/v1/hikes/
 
 ## Organizational Resources:
 - [Project board](https://trello.com/b/DAQ4krma/stretchtech-be)
@@ -57,9 +57,7 @@ npm start
 ## Sources
 - [MDN](http://developer.mozilla.org/en-US/)
 - [W3Schools](https://www.w3schools.com/)
-- [CSS-TRICKS](https://css-tricks.com/)
-- [Knex](https://knexjs.org/guide/)
-- [postgreSQL](https://www.postgresql.org/docs/current/)
+- [Imgur](https://imgur.com/user/cmgross)
 
 ## Contributors
 - [Carissa Gross](https://github.com/carissagross)
