@@ -1,10 +1,9 @@
 import './App.css'
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
-import ScrollRestoration from 'react-scroll-restoration'
 import { getHikes } from '../../apiCalls'
+import ScrollRestoration from 'react-scroll-restoration'
 import Header from '../Header/Header'
-import About from '../Hikes/Hikes'
 import HikeDetails from '../HikeDetails/HikeDetails'
 import FavoriteHikes from '../FavoriteHikes/FavoriteHikes'
 import Hikes from '../Hikes/Hikes'
@@ -35,12 +34,17 @@ class App extends Component {
 
   saveFavoriteHike = (id) => {
     const favHike = this.state.hikes.find(hike => hike.id === id)
-
-    if (!this.state.favoriteHikes) {
-      this.state.favoriteHikes.push(favHike)
+    if (!this.state.favoriteHikes.includes(favHike)) {
+      const favState = { ...this.state }
+      favState.favoriteHikes.push(favHike)
+      this.setState({ favoriteHikes: [...favState.favoriteHikes] })
+      // console.log(this.state.favoriteHikes)
     }
+    // if (!this.state.favoriteHikes.includes(favHike)) {
+    //   this.state.favoriteHikes.push(favHike)
+    // }
   }
-  
+
   render() {
     return (
       <main className='App'>

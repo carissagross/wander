@@ -6,13 +6,13 @@ import './Header.css'
 const Header = () => {
     return (
         <div className='header'>
-             <Link to='/favorites'>
+             <Link className='favorite-button-container' to='/favorites'>
                 <button className='view-favorites'>VIEW FAVORITES</button>
             </Link>
-            <Link to='/'>
+            <Link className='logo-container' to='/'>
                 <img src={logo} alt="logo" className="logo" />
             </Link>
-            <Link to='/'>
+            <Link className='hikes-button-container' to='/'>
                 <button className='view-hikes'>VIEW ALL HIKES</button>
             </Link>
         </div>

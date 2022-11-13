@@ -14,6 +14,8 @@ describe('App', () => {
   })
 
   // it('should receive an error message if ')
+  // it(should) add a hike as a favorite to a favorites page when favorites is clicked
+  // the favorite hike should appear on the favorites page
 
   it('on page load, it should see hike cards with hike details', () => {
     cy.get('.hikes-container')
@@ -34,10 +36,6 @@ describe('App', () => {
       .get('.details-image')
       .get('.favorite-button').should('be.visible')
   })
-
-  // it('should show favorite hikes when a hike is favorited', () => {
-  //   cy.get('.hike-card').first().click()
-  // })
 
   it('should click view all hikes button to go back and view all hikes', () => {
     cy.get('.view-hikes').click()
