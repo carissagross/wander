@@ -1,5 +1,6 @@
 # Wander
-<img width="1631" alt="Screenshot 2022-11-12 at 9 32 25 AM" src="https://user-images.githubusercontent.com/83977544/201484404-9f8241bd-4eab-41aa-9927-74069ad144da.png">
+<img width="1653" alt="Screenshot 2022-11-12 at 9 51 02 PM" src="https://user-images.githubusercontent.com/83977544/201506476-bddb501d-6c3b-4a11-8cee-5fd246741258.png">
+
 <img width="1626" alt="Screenshot 2022-11-12 at 9 32 45 AM" src="https://user-images.githubusercontent.com/83977544/201484417-8e3da180-8196-4ba8-95e0-c902dab1c2eb.png">
 
 ## Table of Contents
