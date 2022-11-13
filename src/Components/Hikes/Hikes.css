@@ -1,7 +1,7 @@
 .main-container {
     width: 100vw;
     height: 80vh;
-    margin-top: 25vh;
+    margin-top: 2vh;
 }
 
 .hikes-container {
@@ -10,7 +10,7 @@
     justify-content: space-around;
     width: 100vw;
     height: 80vh;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 
 @media screen and (max-width:390px) {
@@ -23,6 +23,13 @@
     height: 80vh;
  }
 }
+
+@media screen and (max-width:414px) {
+   .hikes-container {
+      width: 95vw;
+      height: 80vh;
+   }
+  }
 
 @media screen and (max-width:770px) {
     .main-container {

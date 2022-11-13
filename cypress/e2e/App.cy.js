@@ -13,9 +13,18 @@ describe('App', () => {
       .get('.view-hikes').should('be.visible')
   })
 
-  // it('should receive an error message if ')
-  // it(should) add a hike as a favorite to a favorites page when favorites is clicked
-  // the favorite hike should appear on the favorites page
+  // it('should receive an error message if the data is not fetched', () => {
+  //   cy.intercept({
+  //     method: 'GET',
+  //     url: 'https://wander-hikes-api.herokuapp.com/api/v1/hikes/',
+  //   },
+  //   {
+  //     statusCode: 404,
+  //     body: {
+  //       message: 'There was an error fetching the hikes - please reload and try again.'
+  //     }
+  //   })
+  // })
 
   it('on page load, it should see hike cards with hike details', () => {
     cy.get('.hikes-container')
@@ -56,6 +65,16 @@ describe('App', () => {
     cy.get('.view-favorites').click()
       .url().should('include', '/favorites')
       .get('.title').contains('FAVORITE HIKES')
-      .get('.fav-error').contains('You have no favorites, yet! Add some!')
+      .get('.fav-error').contains('You have no favorites, yet!')
   })
+
+  it('should show the favorite hike after saving the hike', () => {
+    cy.get('.hike-card').first().click()
+      .url().should('include', '/1')
+      .get('.favorite-button').contains('ADD TO FAVORITES').click()
+      .get('.view-favorites').click()
+      .url().should('include', '/favorites')
+      .get('.hike-card').contains('Ice Lake Basin').should('have.length', 1)
+  })
+
 })

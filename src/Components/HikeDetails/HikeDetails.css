@@ -3,7 +3,6 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin-top: 22vh;
     height: 135vh;
 }
 
@@ -99,6 +98,9 @@
 }
 
 @media screen and (max-width:390px) {
+    .details-container {
+        margin-top: 10vh;
+    }
     .image-name-description-wrapper {
         height: 70%;
         width: 80%;
@@ -112,11 +114,11 @@
     .details-difficulty {
         font-size: 90%;
     }
-    
+
     .details-distance {
         font-size: 90%;
     }
-    
+
     .details-elevation {
         font-size: 90%;
     }

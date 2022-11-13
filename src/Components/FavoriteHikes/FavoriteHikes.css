@@ -12,10 +12,8 @@
     width: 100vw;
     height: 10vh;
     flex-direction: column;
-    margin-top: 15%;
     content: contain;
     align-items: center;
-    margin-bottom: 4%;
 }
 
 .title {

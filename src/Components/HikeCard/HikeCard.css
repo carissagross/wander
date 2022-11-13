@@ -1,6 +1,6 @@
 .hike-card {
-    height: 80%;
-    width: 30%;
+    height: 78%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +51,7 @@
     font-family: 'Montserrat', sans-serif;
     color: #054a57;
     font-size: 105%;
-    margin-bottom: 1%;
+    margin-bottom: 4%;
 }
 
 .hike-location {
@@ -154,5 +154,85 @@
     .location-icon {
         height: 40%;
         width: auto;
+    }
+}
+
+@media screen and (max-width:1358px) {
+    .hike-card {
+        height: 70%;
+        width: 20%;
+    }
+
+    .hike-name-container {
+        height: 14%;
+        text-align: center;
+    }
+
+    .hike-name {
+        font-size: 150%;
+    }
+
+    .hike-image {
+        width: 100%;
+        margin-top: 20%;
+        margin-bottom: 4%;
+    }
+
+    .hike-distance {
+        font-size: 90%;
+        margin-bottom: 4%;
+    }
+
+    .hike-location {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 130%;
+        height: 20%;
+        width: 100%;
+    }
+
+    .location-icon {
+        height: 40%;
+    }
+}
+
+@media screen and (max-width:1368px) {
+    .hike-card {
+        height: 58%;
+        width: 20%;
+    }
+
+    .hike-name-container {
+        height: 14%;
+        text-align: center;
+    }
+
+    .hike-name {
+        font-size: 150%;
+    }
+
+    .hike-image {
+        width: 100%;
+        margin-top: 20%;
+        margin-bottom: 4%;
+    }
+
+    .hike-distance {
+        font-size: 90%;
+        margin-bottom: 4%;
+    }
+
+    .hike-location {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 130%;
+        height: 20%;
+        width: 100%;
+    }
+
+    .location-icon {
+        height: 40%;
     }
 }

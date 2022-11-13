@@ -1,9 +1,7 @@
 import React from 'react'
 import './FavoriteHikes.css'
-import { Link } from "react-router-dom";
 import HikeCard from '../HikeCard/HikeCard'
 import PropTypes from 'prop-types'
-
 
 const FavoriteHikes = ({ favHikes }) => {
     const favHike = favHikes.map(hike => {
@@ -18,17 +16,17 @@ const FavoriteHikes = ({ favHikes }) => {
             />
         )
     }
-)
+    )
     return (
-    <div>
-        <div className='favorites-title-container'>
-            <p className='title'>FAVORITE HIKES</p>
-            {!favHike.length && <p className='fav-error'>You have no favorites, yet!</p>}
+        <div>
+            <div className='favorites-title-container'>
+                <p className='title'>FAVORITE HIKES</p>
+                {!favHike.length && <p className='fav-error'>You have no favorites, yet!</p>}
+            </div>
+            <div className='favorites-container'>
+                {favHike}
+            </div>
         </div>
-        <div className='favorites-container'>
-            {favHike}
-        </div>
-    </div>
     )
 }
 export default FavoriteHikes
