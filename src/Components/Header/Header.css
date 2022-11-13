@@ -10,7 +10,8 @@
     justify-content: space-evenly;
 }
 
-.favorite-button-container, .hikes-button-container {
+.favorite-button-container,
+.hikes-button-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,10 +62,6 @@
     will-change: transform;
 }
 
-/* .button-28:disabled {
-  pointer-events: none;
-} */
-
 .view-favorites:hover,
 .view-hikes:hover {
     color: #fff;
@@ -81,24 +78,28 @@
 
 @media screen and (max-width:390px) {
     .header {
-        flex-direction: column;
-        height: 10%;
+        display: flex;
+        flex-direction: row;
+        height: 20%;
         width: 100%;
     }
 
-.favorite-button-container, .hikes-button-container {
-    width: 100%;
-    height: 20%;
-}
+    .favorite-button-container,
+    .hikes-button-container {
+        align-items: center;
+        width: 100%;
+        height: 30%;
+        }
 
-.view-favorites,
-.view-hikes {
-    width: 60%;
-    height: 80%;
-}
+    .view-favorites,
+    .view-hikes {
+        width: 70%;
+        font-size: 8%;
+        height: 100%;
+    }
 
-.logo {
-height: 50%;
-width: auto;
-}
+    .logo {
+        height: 55%;
+        width: auto;
+    }
 }

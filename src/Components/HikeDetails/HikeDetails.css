@@ -69,14 +69,14 @@
 }
 
 .favorite-button {
-    width: 50%;
+    width: 35%;
     height: 100%;
     background-color: #054a57;
     border: 2px solid #054a57;
     color: white;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-    font-size: 95%;
+    font-size: 92%;
     font-weight: 600;
     margin-bottom: 2%;
     text-align: center;
@@ -98,49 +98,33 @@
     transform: translateY(4px)
 }
 
-/* @media (max-width:600px) {
-
-    .specific-details-container {
-        display: flex;
-        flex-direction: column;
-        width: 75vw;
-        align-items: center;
-    }
-
-    .details-name {
-        font-size: 1.6em;
-        margin-bottom: 4%;
-    }
-
-    .details-image {
-        height: 28em;
-        width: 28em;
+@media screen and (max-width:390px) {
+    .image-name-description-wrapper {
+        height: 70%;
+        width: 80%;
     }
 
     .details-description {
-        font-size: 1.25em;
+        font-size: 95%;
         text-align: center;
     }
 
-    .details-difficulty,
-    .details-distance,
+    .details-difficulty {
+        font-size: 90%;
+    }
+    
+    .details-distance {
+        font-size: 90%;
+    }
+    
     .details-elevation {
-        font-size: 1em;
+        font-size: 90%;
     }
 
-} */
-
-/* @media only screen and (min-width:300px) and (max-width:480px) {
-    .details-container {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 80vw;
-        height: 30vh;
-        margin-top: 50%;
+    .favorite-button {
+        width: 60%;
+        height: 60%;
+        margin-top: 5%;
+        font-size: 65%;
     }
 }
-
-@media only screen and (min-width:481px) and (max-width:768px) {}
-
-@media only screen and (min-width: 769px) and (max-width:1024px) {} */
