@@ -20,30 +20,18 @@
    font-family: 'Montserrat', sans-serif;
 }
 
-@media screen and (max-width:390px) {
+@media screen and (max-width:414px) {
    .main-container {
-      margin-top: 20vh;
+      margin-top: 10vh;
+      align-items: center;
    }
 
    .hikes-container {
-      width: 95vw;
+      display: flex;
+      width: 100vw;
       height: 80vh;
+      justify-content: center;
    }
 }
 
-/* @media screen and (max-width:414px) {
-   .hikes-container {
-      width: 95vw;
-      height: 80vh;
-   }
-}
 
-@media screen and (max-width:770px) {
-   .main-container {
-      margin-top: 20vh;
-   }
-
-   .hikes-container {
-      width: 95vw;
-      height: 80vh;
-   } */
