@@ -2,82 +2,88 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* width: 100vw;
-    height: 100vh; */
-    margin-top: 15%;
-    margin-bottom: 20%;
+    width: 100%;
+    height: 135vh;
 }
 
-.specific-details-container {
+.image-name-description-wrapper {
+    height: 80%;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    width: 40vw;
     align-items: center;
+    color: #054a57;
 }
 
 .details-name {
     color: #054a57;
     font-family: 'League Gothic', sans-serif;
-    font-size: 2.2em;
-    margin-bottom: 4%;
+    font-size: 210%;
+}
+
+.details-image {
+    height: auto;
+    width: 75%;
+    padding: 1%;
+    background-color: #054a57;
+}
+
+.other-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    padding: 2%;
+    height: 20%;
+    contain: content;
 }
 
 .details-description {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.35em;
+    font-size: 120%;
     text-align: center;
-    margin-bottom: 3%;
+    color: #054a57;
+    margin-bottom: 2%;
 }
 
 .details-difficulty {
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     font-family: 'Montserrat', sans-serif;
     color: #054a57;
-    font-size: 1.25em;
+    font-size: 130%;
 }
 
 .details-distance {
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     font-family: 'Montserrat', sans-serif;
     color: #054a57;
-    font-size: 1.25em;
+    font-size: 130%;
 }
 
 .details-elevation {
     margin-bottom: 2%;
     font-family: 'Montserrat', sans-serif;
     color: #054a57;
-    font-size: 1.25em;
-}
-
-.image-container {
-    display: flex;
-    width: 40vw;
-    flex-direction: column;
-    align-items: center;
-}
-
-.details-image {
-    height: 36em;
-    width: 36em;
-}
-
-.button-container {
-    margin-top: 2%;
-    display: flex;
-    width: 100vw;
-    height: 10vh;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    font-size: 130%;
 }
 
 .favorite-button {
-    width: 18em;
-    height: 3em;
+    width: 35%;
+    height: 100%;
     background-color: #054a57;
-    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #054a57;
     color: white;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 92%;
+    font-weight: 600;
+    margin-bottom: 2%;
+    text-align: center;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
 }
 
 .favorite-button:hover {
@@ -91,42 +97,36 @@
     transform: translateY(4px)
 }
 
-@media (max-width:600px) {
-
+@media screen and (max-width:390px) {
     .details-container {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 75%;
-        margin-bottom: 30%;
+        margin-top: 10vh;
     }
-
-    .specific-details-container {
-        display: flex;
-        flex-direction: column;
-        width: 75vw;
-        align-items: center;
-    }
-
-    .details-name {
-        font-size: 1.6em;
-        margin-bottom: 4%;
-    }
-
-    .details-image {
-        height: 28em;
-        width: 28em;
+    .image-name-description-wrapper {
+        height: 70%;
+        width: 80%;
     }
 
     .details-description {
-        font-size: 1.25em;
+        font-size: 95%;
         text-align: center;
-        margin-bottom: 6%;
     }
 
-    .details-difficulty, .details-distance, .details-elevation  {
-        font-size: 1em;
+    .details-difficulty {
+        font-size: 90%;
     }
 
+    .details-distance {
+        font-size: 90%;
+    }
+
+    .details-elevation {
+        font-size: 90%;
+    }
+
+    .favorite-button {
+        width: 60%;
+        height: 60%;
+        margin-top: 5%;
+        font-size: 65%;
+    }
 }
-

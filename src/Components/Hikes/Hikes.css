@@ -1,25 +1,43 @@
+.main-container {
+    width: 100vw;
+    height: 80vh;
+    margin-top: 2vh;
+}
+
 .hikes-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: 100%;
-    width: 100%;
-    gap: 0px;
-    grid-gap: 1em;
-    row-gap: 10%;
-    margin-top: 18%;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100vw;
+    height: 80vh;
+    /* overflow-y: auto; */
 }
 
+@media screen and (max-width:390px) {
+ .main-container {
+    margin-top: 20vh;
+ }
 
-@media (max-width:500px) {
-    .hikes-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 110%;
-        width: 100%;
-        justify-content: center;
+ .hikes-container {
+    width: 95vw;
+    height: 80vh;
+ }
+}
+
+@media screen and (max-width:414px) {
+   .hikes-container {
+      width: 95vw;
+      height: 80vh;
+   }
+  }
+
+@media screen and (max-width:770px) {
+    .main-container {
+       margin-top: 20vh;
     }
-
-}
-
+   
+    .hikes-container {
+       width: 95vw;
+       height: 80vh;
+    }
+   }

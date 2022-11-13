@@ -2,8 +2,8 @@ import { getByAltText } from "@testing-library/react"
 
 describe('App', () => {
   beforeEach(() => {
+    cy.intercept('GET', 'https://wander-hikes-api.herokuapp.com/api/v1/hikes/', {fixture: 'hikeList'})
     cy.visit('http://localhost:3000/')
-    cy.intercept('GET', 'https://wander-hikes-api.herokuapp.com/api/v1/hikes/', { fixture: 'hikeList' }).as('hikeList')
   })
 
   it('on page load, it should see a header with a logo, a view favorites button and view all hikes button', () => {
@@ -12,6 +12,19 @@ describe('App', () => {
       .get('.view-favorites').should('be.visible')
       .get('.view-hikes').should('be.visible')
   })
+
+  // it('should receive an error message if the data is not fetched', () => {
+  //   cy.intercept({
+  //     method: 'GET',
+  //     url: 'https://wander-hikes-api.herokuapp.com/api/v1/hikes/',
+  //   },
+  //   {
+  //     statusCode: 404,
+  //     body: {
+  //       message: 'There was an error fetching the hikes - please reload and try again.'
+  //     }
+  //   })
+  // })
 
   it('on page load, it should see hike cards with hike details', () => {
     cy.get('.hikes-container')
@@ -33,10 +46,6 @@ describe('App', () => {
       .get('.favorite-button').should('be.visible')
   })
 
-  // it('should show favorite hikes when a hike is favorited, () => {
-  //   cy.get('.view-fa')
-  // })
-
   it('should click view all hikes button to go back and view all hikes', () => {
     cy.get('.view-hikes').click()
       .url().should('include', '/')
@@ -56,7 +65,16 @@ describe('App', () => {
     cy.get('.view-favorites').click()
       .url().should('include', '/favorites')
       .get('.title').contains('FAVORITE HIKES')
-      .get('.fav-error').contains('You have no favorites, yet! Add some!')
+      .get('.fav-error').contains('You have no favorites, yet!')
+  })
+
+  it('should show the favorite hike after saving the hike', () => {
+    cy.get('.hike-card').first().click()
+      .url().should('include', '/1')
+      .get('.favorite-button').contains('ADD TO FAVORITES').click()
+      .get('.view-favorites').click()
+      .url().should('include', '/favorites')
+      .get('.hike-card').contains('Ice Lake Basin').should('have.length', 1)
   })
 
 })

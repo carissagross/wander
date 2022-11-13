@@ -1,10 +1,18 @@
+.favorites-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100vw;
+    height: 80vh;
+    overflow-y: auto;
+}
+
 .favorites-title-container {
     display: flex;
     width: 100vw;
-    /* height: 15vh; */
-    margin-top: 22%;
+    height: 10vh;
     flex-direction: column;
-    justify-content: center;
+    content: contain;
     align-items: center;
 }
 
@@ -14,56 +22,36 @@
     font-size: 2em;
 }
 
-.favorites-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* height: 70vh;
-    width: 100vw; */
-    gap: 0px;
-    grid-gap: 1em;
-    row-gap: 10%;
-    justify-items: center;
-    margin-bottom: -30%;
-}
-
 .fav-error {
     font-family: 'League Gothic', sans-serif;
-    font-size: 4em;
+    font-size: 200%;
     color: #054a57;
 }
 
-.error-container {
-    display: flex;
-    width: 100vw;
-    height: 15vh;
-    flex-direction: column;
-    align-items: center;
+@media screen and (max-width:390px) {
+    .favorites-container {
+        width: 95vw;
+        height: 80vh;
+        padding: 1px;
+    }
+
+    .favorites-title-container {
+        margin-top: 40%;
+
+
+    }
 }
 
-@media only screen and (max-width:876px) {
-    .favorites-title-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top:60%;
-    }
-
+@media screen and (max-width:768px) {
     .favorites-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        width: 95vw;
+        height: 80vh;
+        padding: 1px;
     }
 
-    .fav-error {
-        font-family: 'League Gothic', sans-serif;
-        font-size: 1em;
-        color: #054a57;
-    }
+    .favorites-title-container {
+        margin-top: 40%;
 
-    .title {
-        color: #054a57;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1em;
     }
 
 }

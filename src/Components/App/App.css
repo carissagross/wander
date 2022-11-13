@@ -9,6 +9,9 @@
   font-size: 2em;
   margin-top: 3%;
   color: #054a57;
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
 }
 
 .App {

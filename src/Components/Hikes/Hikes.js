@@ -20,8 +20,10 @@ const Hikes = ({hikes}) => {
         return <p className='loading'>Hikes are Loading!</p>
     } else {
         return (
-            <div className='hikes-container'>
-                {hikeCards}
+            <div className='main-container'>
+                <div className='hikes-container'>
+                    {hikeCards}
+                </div>
             </div>
         )
     }

@@ -12,7 +12,10 @@ const HikeCard = ({id, name, image, location, distance}) => {
         </div>
             <img src={image} alt={name} className='hike-image'/>
             <p className='hike-distance'>{distance} miles round trip</p>
-            <p className='hike-location'><img src={location_icon} alt='location' className='location-icon'/>   {location}</p>
+        <div className='hike-location'>
+            <img src={location_icon} alt='location' className='location-icon'/>
+            <p>{location}</p>
+        </div>
         </Link>
     )
 }
