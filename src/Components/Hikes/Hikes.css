@@ -1,20 +1,24 @@
 .hikes-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 75%;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     gap: 0px;
     grid-gap: 1em;
     row-gap: 10%;
-    margin-top: 20em;
+    margin-top: 18%;
     justify-items: center;
 }
 
-@media (max-width:500px){
-    .hikes-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
 
+@media (max-width:500px) {
+    .hikes-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 110%;
+        width: 100%;
+        justify-content: center;
     }
 
 }

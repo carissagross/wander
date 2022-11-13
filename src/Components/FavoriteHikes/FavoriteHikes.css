@@ -1,13 +1,11 @@
-
 .favorites-title-container {
     display: flex;
     width: 100vw;
-    height: 15vh;
-    margin-top: 20%;
+    /* height: 15vh; */
+    margin-top: 22%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .title {
@@ -19,16 +17,53 @@
 .favorites-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 85vh;
-    width: 100vw;
+    /* height: 70vh;
+    width: 100vw; */
     gap: 0px;
     grid-gap: 1em;
     row-gap: 10%;
     justify-items: center;
-    margin-bottom: 2%;
+    margin-bottom: -30%;
 }
 
 .fav-error {
     font-family: 'League Gothic', sans-serif;
     font-size: 4em;
+    color: #054a57;
+}
+
+.error-container {
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width:876px) {
+    .favorites-title-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top:60%;
+    }
+
+    .favorites-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .fav-error {
+        font-family: 'League Gothic', sans-serif;
+        font-size: 1em;
+        color: #054a57;
+    }
+
+    .title {
+        color: #054a57;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+    }
+
 }

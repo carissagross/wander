@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import HikeCard from '../HikeCard/HikeCard'
 import './Hikes.css'
 
@@ -15,10 +16,23 @@ const Hikes = ({hikes}) => {
             />
         )
     })
-    return (
-        <div className='hikes-container'>
-            {hikeCards}
-        </div>
-    )
+    if (hikes === undefined) {
+        return <p className='loading'>Hikes are Loading!</p>
+    } else {
+        return (
+            <div className='hikes-container'>
+                {hikeCards}
+            </div>
+        )
+    }
 }
 export default Hikes
+
+Hikes.propTypes = {
+    id: PropTypes.string,
+    name: PropTypes.string,
+    image: PropTypes.string,
+    location: PropTypes.string,
+    distance: PropTypes.string,
+    key: PropTypes.string
+}
