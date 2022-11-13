@@ -75,7 +75,7 @@
 
 @media screen and (max-width:414px) {
     .hike-card {
-        height: 78%;
+        height: 85%;
         width: 100vw;
     }
 
@@ -92,7 +92,6 @@
     .hike-image {
         width: 100%;
         margin-top: 10%;
-        margin-bottom: 2%;
     }
 
     .hike-distance {
