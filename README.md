@@ -36,7 +36,8 @@
 ## Possible Future Extentsions
 - Add more hikes!
 - Allow user to add their own hikes
-- Filter hikes by location or milage round trip.
+- Filter hikes by location or milage round trip
+- Add a heart to the main page of hikes when a hike is favorited
 
 ## GIF
 - GIF HERE
@@ -46,7 +47,7 @@ git clone github link here
 npm install
 npm start
 
-- Deployed Application: https://radiance-delta.vercel.app/
+- Deployed Application: https://wander-hiking-app.herokuapp.com/
 - Deployed API: https://radiance-app.herokuapp.com/api/v1/affirmations
 
 ## Organizational Resources:
