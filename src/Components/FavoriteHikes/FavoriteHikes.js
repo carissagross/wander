@@ -43,3 +43,4 @@ const favoritesShape = {
 FavoriteHikes.propTypes = {
     favHikes: PropTypes.arrayOf(PropTypes.shape(favoritesShape)).isRequired
 }
+
