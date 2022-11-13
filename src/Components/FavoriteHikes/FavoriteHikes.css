@@ -30,18 +30,6 @@
 
 @media screen and (max-width:390px) {
     .favorites-container {
-        width: 95vw;
-        height: 80vh;
-        padding: 1px;
-    }
-
-    .favorites-title-container {
-        margin-top: 40%;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .favorites-container {
         width: 100vw;
         height: 80vh;
         padding: 1px;
@@ -49,7 +37,5 @@
 
     .favorites-title-container {
         margin-top: 40%;
-
     }
-
 }

@@ -10,7 +10,6 @@
    justify-content: space-around;
    width: 100vw;
    height: 80vh;
-   /* overflow-y: auto; */
 }
 
 .loading {
@@ -29,9 +28,12 @@
    .hikes-container {
       display: flex;
       width: 100vw;
-      height: 80vh;
+      height: 100vh;
       justify-content: center;
    }
 }
+
+
+
 
 
