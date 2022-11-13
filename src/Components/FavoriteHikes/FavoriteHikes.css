@@ -39,17 +39,3 @@
         margin-top: 40%;
     }
 }
-
-@media screen and (max-width:768px) {
-    .favorites-container {
-        width: 100vw;
-        height: 100vh;
-        padding: 1px;
-    }
-
-    .favorites-title-container {
-        margin-top: 40%;
-
-    }
-
-}

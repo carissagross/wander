@@ -4,7 +4,6 @@ import HikeCard from '../HikeCard/HikeCard'
 import PropTypes from 'prop-types'
 
 const FavoriteHikes = ({ favHikes }) => {
-    console.log(favHikes)
     const favHike = favHikes.map(hike => {
         return (
             <HikeCard
