@@ -30,7 +30,7 @@
 
 @media screen and (max-width:390px) {
     .favorites-container {
-        width: 95vw;
+        width: 100vw;
         height: 80vh;
         padding: 1px;
     }
@@ -43,7 +43,7 @@
 @media screen and (max-width:768px) {
     .favorites-container {
         width: 100vw;
-        height: 80vh;
+        height: 100vh;
         padding: 1px;
     }
 
