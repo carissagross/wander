@@ -76,7 +76,7 @@
     transform: translateY(0);
 }
 
-@media screen and (max-width:390px) {
+@media screen and (max-width:414px) {
     .header {
         display: flex;
         flex-direction: row;
@@ -94,7 +94,7 @@
     .view-favorites,
     .view-hikes {
         width: 70%;
-        font-size: 8%;
+        font-size: 10%;
         height: 100%;
     }
 
