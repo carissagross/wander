@@ -14,7 +14,6 @@ class App extends Component {
     this.state = {
       hikes: [],
       favoriteHikes: [],
-      filteredHikes: [],
       error: ''
     }
   }
@@ -34,17 +33,13 @@ class App extends Component {
 
   saveFavoriteHike = (id) => {
     const favHike = this.state.hikes.find(hike => hike.id === id)
+
     if (!this.state.favoriteHikes.includes(favHike)) {
       const favState = { ...this.state }
       favState.favoriteHikes.push(favHike)
       this.setState({ favoriteHikes: [...favState.favoriteHikes] })
-      // console.log(this.state.favoriteHikes)
     }
-    // if (!this.state.favoriteHikes.includes(favHike)) {
-    //   this.state.favoriteHikes.push(favHike)
-    // }
   }
-
   render() {
     return (
       <main className='App'>
@@ -52,7 +47,7 @@ class App extends Component {
         <Header />
         <ScrollRestoration />
         <Switch>
-          <Route exact path='/' render={() => <Hikes hikes={this.state.hikes} />} />
+          <Route exact path='/' render={() => <Hikes hikes={this.state.hikes} favHikes={this.state.favoriteHikes} />} />
           <Route exact path='/favorites' render={() => <FavoriteHikes favHikes={this.state.favoriteHikes} />} />
           <Route exact path='/:id' render={({ match }) => {
             const singleHike = this.state.hikes.find(hike => hike.id === match.params.id)

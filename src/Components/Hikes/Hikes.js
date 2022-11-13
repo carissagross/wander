@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import HikeCard from '../HikeCard/HikeCard'
 import './Hikes.css'
 
-const Hikes = ({hikes}) => {
+const Hikes = ({hikes, favHikes}) => {
     const hikeCards = hikes.map((hike) => {
         return (
             <HikeCard
@@ -13,6 +13,7 @@ const Hikes = ({hikes}) => {
             location={hike.location}
             distance={hike.distance}
             key={hike.id}
+            fav={favHikes}
             />
         )
     })

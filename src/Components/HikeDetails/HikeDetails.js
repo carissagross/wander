@@ -8,7 +8,7 @@ const HikeDetails = ({ hike, saveHike }) => {
         <section className='details-container'>
             <div className='image-name-description-wrapper'>
                 <p className='details-name'>{hike?.name}</p>
-                <img src={hike?.image} alt="Sweeping mountain views" className='details-image'/>
+                <img src={hike?.image} alt="Sweeping mountain views" className='details-image' />
                 <p className='details-description'>{hike?.description}</p>
             </div>
             <div className='other-details-wrapper'>
