@@ -39,6 +39,7 @@
 - Filter hikes by location or milage round trip
 - Add a heart to the main page when a hike is favorited
 - Allow users to delete from their favorites page
+- Create a completed page where users store their completed hikes
 
 ## GIF
 ![Nov-13-2022 11-46-50](https://user-images.githubusercontent.com/83977544/201538810-96444535-9745-4bbc-8f6b-812b589b62de.gif)
