@@ -37,7 +37,8 @@
 - Add more hikes!
 - Allow user to add their own hikes
 - Filter hikes by location or milage round trip
-- Add a heart to the main page of hikes when a hike is favorited
+- Add a heart to the main page when a hike is favorited
+- Allow users to delete from their favorites page
 
 ## GIF
 ![Nov-13-2022 11-46-50](https://user-images.githubusercontent.com/83977544/201538810-96444535-9745-4bbc-8f6b-812b589b62de.gif)
